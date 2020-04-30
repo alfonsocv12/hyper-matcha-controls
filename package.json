@@ -1,11 +1,11 @@
 {
   "name": "hyper-matcha-controls",
-  "version": "1.1.2",
-  "description": "Hyper matcha-dark-sea-like window controls on linux",
+  "version": "1.0.0",
+  "description": "Hyper matcha-like window controls on linux",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfonsocv12/hyper-matcha-dark-sea-controls"
+    "url": "git+https://github.com/alfonsocv12/hyper-matcha-controls"
   },
   "keywords": [
     "hyper",

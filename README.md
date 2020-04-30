@@ -1,4 +1,4 @@
-# Hyper-matcha-dark-sea-controls! [![npm-version][npm-badge]][npm-link]
+# Hyper-matcha-controls! [![npm-version][npm-badge]][npm-link]
 
 A plugin that makes the close, minimize and maximize buttons look like the matcha dark sea window controls. This plugin is tested on linux.
 
@@ -33,7 +33,10 @@ module.exports = {
 ```
 
 ### Changelog
-**0.0.1**
+**1.0.1**
+- Repair mistakes on package.json
+- Repair mistakes on readme
+**1.0.0**
 - Add matcha dark sea controls
 
 ### License
