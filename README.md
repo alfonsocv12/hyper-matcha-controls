@@ -40,7 +40,7 @@ module.exports = {
 
 MIT © [krve][author]
 
-[screenshot]: https://cloud.githubusercontent.com/assets/5139119/21655977/766986e0-d2bc-11e6-8182-fd48c55c4416.png
+[screenshot]: https://user-images.githubusercontent.com/31135704/80696951-72436100-8a95-11ea-9df3-f4af0359eb35.png
 [npm-badge]:  https://img.shields.io/npm/v/hyper-matcha-controls.svg?style=flat-square
 [npm-link]:   https://www.npmjs.com/package/hyper-matcha-controls
 [author]:     https://github.com/alfonsocv12
