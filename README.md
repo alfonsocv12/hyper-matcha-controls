@@ -24,7 +24,7 @@ Default value is `true`
 module.exports = {
   config: {
     ...
-      hyperMacControls: {
+      hypermatchaControls: {
         flipped: true,
       }
     ...
@@ -41,7 +41,7 @@ module.exports = {
 MIT © [krve][author]
 
 [screenshot]: https://cloud.githubusercontent.com/assets/5139119/21655977/766986e0-d2bc-11e6-8182-fd48c55c4416.png
-[npm-badge]:  https://img.shields.io/npm/v/hyper-mac-controls.svg?style=flat-square
-[npm-link]:   https://www.npmjs.com/package/hyper-mac-controls
+[npm-badge]:  https://img.shields.io/npm/v/hyper-matcha-controls.svg?style=flat-square
+[npm-link]:   https://www.npmjs.com/package/hyper-matcha-controls
 [author]:     https://github.com/alfonsocv12
-[base-on]:    https://github.com/krve/hyper-mac-controls
+[base-on]:    https://github.com/krve/hyper-matcha-controls

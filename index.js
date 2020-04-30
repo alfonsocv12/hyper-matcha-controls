@@ -11,7 +11,7 @@ if (isWin == true) {
 exports.decorateConfig = (config) => {
     const pluginConfig = Object.assign({
         flipped: true,
-    }, config.hyperMacControls);
+    }, config.hypermatchaControls);
 
     const windowControls = config.showWindowControls;
 
@@ -26,8 +26,8 @@ exports.decorateConfig = (config) => {
             ${config.css || ''}
             .header_windowHeader {
                 height: 22px;
-                left: ${isLeft ? '57px' : '0'};
-                width: calc(100% - 56px);
+                left: ${isLeft ? '65px' : '0'};
+                width: calc(100% - 64px);
             }
             .header_windowControls {
                 display: none;
@@ -35,50 +35,62 @@ exports.decorateConfig = (config) => {
             .header_appTitle {
                 margin-left: -56px;
             }
-            .mac_header {
+            .matcha_header {
                 position: fixed;
                 top: 0;
                 ${isLeft ? 'left: 0;' : 'right: 0;'}
                 height: 22px;
-                width: 56px;
+                width: 64px;
             }
-            .mac_actions {
+            .matcha_actions {
                 position: absolute;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 top: 0;
             }
-            .mac_header .mac_close,
-            .mac_header .mac_minimize,
-            .mac_header .mac_maximize {
+            .matcha_header .matcha_close ,
+            .matcha_header .matcha_minimize ,
+            .matcha_header .matcha_maximize {
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
                 position: absolute;
-                top: 5px;
+                top: 6px;
                 background-position: -6px;
             }
-            .mac_header .mac_close {
+
+            .matcha_header .matcha_close {
                 background-image: url('${dirname}/icons/close.svg');
-                left: ${pluginConfig.flipped ? '5px' : '40px'};
+                left: ${pluginConfig.flipped ? '8px' : '53px'};
             }
-            .mac_header .mac_close:hover {
+            .matcha_header .matcha_close:hover {
                 background-image: url('${dirname}/icons/close_hover.svg');
             }
-            .mac_header .mac_minimize {
-                background-image: url('${dirname}/icons/minimize.svg');
-                left: 23px;
+            .matcha_header .matcha_close:active {
+                background-image: url('${dirname}/icons/close_pressed.svg');
             }
-            .mac_header .mac_minimize:hover {
+
+            .matcha_header .matcha_minimize {
+                background-image: url('${dirname}/icons/minimize.svg');
+                left: 32px;
+            }
+            .matcha_header .matcha_minimize:hover {
                 background-image: url('${dirname}/icons/minimize_hover.svg');
             }
-            .mac_header .mac_maximize {
-                background-image: url('${dirname}/icons/maximize.svg');
-                left: ${pluginConfig.flipped ? '40px' : '5px'};
+            .matcha_header .matcha_minimize:active {
+                background-image: url('${dirname}/icons/minimize_pressed.svg');
             }
-            .mac_header .mac_maximize:hover {
+
+            .matcha_header .matcha_maximize {
+                background-image: url('${dirname}/icons/maximize.svg');
+                left: ${pluginConfig.flipped ? '53px' : '8px'};
+            }
+            .matcha_header .matcha_maximize:hover {
                 background-image: url('${dirname}/icons/maximize_hover.svg');
+            }
+            .matcha_header .matcha_maximize:active {
+                background-image: url('${dirname}/icons/maximize_pressed.svg');
             }
         `
     })
@@ -121,11 +133,11 @@ exports.decorateHeader = (Hyper, { React }) => {
         render() {
             return (
                 React.createElement(Hyper, Object.assign({}, this.props, {
-                    customChildren: React.createElement('div', { className: 'mac_header' },
-                        React.createElement('div', { className: 'mac_actions' },
-                            React.createElement('span', { className: 'mac_close', onClick: this.closeApp }),
-                            React.createElement('span', { className: 'mac_minimize', onClick: this.minimizeApp }),
-                            React.createElement('span', { className: 'mac_maximize', onClick: this.maximizeApp })
+                    customChildren: React.createElement('div', { className: 'matcha_header' },
+                        React.createElement('div', { className: 'matcha_actions' },
+                            React.createElement('span', { className: 'matcha_close', onClick: this.closeApp }),
+                            React.createElement('span', { className: 'matcha_minimize', onClick: this.minimizeApp }),
+                            React.createElement('span', { className: 'matcha_maximize', onClick: this.maximizeApp })
                         )
                     )
                 }))

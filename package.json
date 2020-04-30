@@ -1,5 +1,5 @@
 {
-  "name": "hyper-mac-controls",
+  "name": "hyper-matcha-controls",
   "version": "1.1.2",
   "description": "Hyper matcha-dark-sea-like window controls on linux",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "hyper-plugin",
     "hyperterm-plugin",
     "plugin",
-    "mac"
+    "matcha"
   ],
   "author": "Alfonso <alfonsocvu@gmail.com>",
   "license": "MIT"
