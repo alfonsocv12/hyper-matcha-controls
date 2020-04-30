@@ -60,7 +60,6 @@ exports.decorateConfig = (config) => {
                 background-position: -6px;
             }
             .mac_header .mac_close {
-                background-color: #f25056;
                 background-image: url('${dirname}/icons/close.svg');
                 left: ${pluginConfig.flipped ? '5px' : '40px'};
             }
@@ -68,7 +67,6 @@ exports.decorateConfig = (config) => {
                 background-image: url('${dirname}/icons/close_hover.svg');
             }
             .mac_header .mac_minimize {
-                background-color: #fac536;
                 background-image: url('${dirname}/icons/minimize.svg');
                 left: 23px;
             }
@@ -76,7 +74,6 @@ exports.decorateConfig = (config) => {
                 background-image: url('${dirname}/icons/minimize_hover.svg');
             }
             .mac_header .mac_maximize {
-                background-color: #39ea49;
                 background-image: url('${dirname}/icons/maximize.svg');
                 left: ${pluginConfig.flipped ? '40px' : '5px'};
             }
